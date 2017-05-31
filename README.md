@@ -8,6 +8,8 @@ ports and a phone.
 Install the Raspbian (lite) image onto a Raspberry Pi, then run the following
 commands (as the `pi` user, whose password is probably `raspberry`):
 ```shell
+sudo apt-get update
+sudo apt-get install git
 cd
 git clone https://github.com/zachdeibert/ap-controller.git
 cd ap-controller
