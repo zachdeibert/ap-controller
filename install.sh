@@ -18,3 +18,4 @@ sudo cp bind9.conf /etc/bind/named.conf.default-zones
 sudo cp db.root /etc/bind/db.root
 sudo touch /var/log/ap-controller.log
 sudo chown www-data:www-data /var/log/ap-controller.log
+sudo -u www-data ls /sys/class/gpio/ > /dev/null 2> /dev/null || sudo usermod -a -G gpio www-data
