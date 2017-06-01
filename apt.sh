@@ -3,4 +3,4 @@ set -e
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install nginx php5-fpm php-apc hostapd isc-dhcp-server
+sudo apt-get install nginx php5-fpm php-apc hostapd isc-dhcp-server bind9
