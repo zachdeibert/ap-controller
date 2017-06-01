@@ -24,6 +24,31 @@
         }
     };
 
+    abstract class Direction {
+        public const In = "in";
+        public const Out = "out";
+    };
+
+    class Gpio {
+        private $file;
+
+        public function getValue() {
+            return file_get_contents($file);
+        }
+
+        public function setValue($value) {
+            file_put_contents($file, "$value");
+        }
+
+        function __construct($direction, $number) {
+            if (!file_exists("/sys/class/gpio/gpio$number/")) {
+                file_put_contents("/sys/class/gpio/export", "$number");
+            }
+            file_put_contents("/sys/class/gpio/gpio$number/direction", $direction);
+            $this->file = "/sys/class/gpio/gpio$number/value";
+        }
+    };
+
     include "controller/handler.php";
     Log::close();
 ?>
