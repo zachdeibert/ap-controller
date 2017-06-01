@@ -16,3 +16,5 @@ sudo cp hostapd.sh /etc/default/hostapd
 sudo sed -e "s|^DAEMON_CONF=$|DAEMON_CONF=/etc/hostapd/hostapd.conf|g" -i /etc/init.d/hostapd
 sudo cp bind9.conf /etc/bind/named.conf.default-zones
 sudo cp db.root /etc/bind/db.root
+sudo touch /var/log/ap-controller.log
+sudo chown www-data:www-data /var/log/ap-controller.log

@@ -6,13 +6,13 @@
      */
     if ($message == "on") {
         // Turn on the LED.
-        error_log("Turning on LED");
+        Log::write("Turning on LED");
     } else if ($message == "off") {
         // Turn off the LED.
-        error_log("Turning off LED");
+        Log::write("Turning off LED");
     } else {
         // There was an error in the controller code, but we can't do anything
         // about it now except write it to the log.
-        error_log("Invalid message");
+        Log::write("Invalid message");
     }
 ?>
