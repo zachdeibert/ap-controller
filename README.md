@@ -17,7 +17,7 @@ cd ap-controller
 ./config.sh
 ./install.sh
 ./example.sh
-./service.sh restart
+sudo reboot
 ```
 
 ## Updating
@@ -32,6 +32,7 @@ If it is acting weird, you might try also running this:
 ```shell
 cd ~/ap-controller
 ./apt.sh
+sudo reboot
 ```
 
 ## Reconfiguring
