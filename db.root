@@ -1,0 +1,3 @@
+@ IN SOA ns.a-controller. ap-controller. ( 1 1h 1h 1h 1h )
+  IN NS 10.42.0.1
+* IN A 10.42.0.1
