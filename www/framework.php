@@ -33,11 +33,11 @@
         private $file;
 
         public function getValue() {
-            return file_get_contents($file);
+            return file_get_contents($this->file);
         }
 
         public function setValue($value) {
-            file_put_contents($file, "$value");
+            file_put_contents($this->file, "$value");
         }
 
         function __construct($direction, $number) {
