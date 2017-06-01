@@ -25,8 +25,8 @@
     };
 
     abstract class Direction {
-        public const In = "in";
-        public const Out = "out";
+        const In = "in";
+        const Out = "out";
     };
 
     class Gpio {

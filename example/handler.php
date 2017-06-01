@@ -4,7 +4,7 @@
      * named `$message` that contains the message the controller sent.  This
      * script should not output anything ever.
      */
-    $gpio = new Gpio(Direction.Out, 21);
+    $gpio = new Gpio(Direction::Out, 21);
     if ($message == "on") {
         // Turn on the LED.
         $gpio->setValue(255);
