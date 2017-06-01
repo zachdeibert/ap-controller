@@ -13,3 +13,6 @@ body.active {
     font-family: monospace;
     white-space: pre;
 }
+.bold {
+    font-weight: bold;
+}
