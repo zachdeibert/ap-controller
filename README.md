@@ -14,6 +14,7 @@ cd
 git clone https://github.com/zachdeibert/ap-controller.git
 cd ap-controller
 ./apt.sh
+./config.sh
 ./install.sh
 ./example.sh
 ./service.sh restart
@@ -31,6 +32,13 @@ If it is acting weird, you might try also running this:
 ```shell
 cd ~/ap-controller
 ./apt.sh
+```
+
+## Reconfiguring
+```shell
+./config.sh
+./install.sh
+./service.sh restart
 ```
 
 ## Controller
